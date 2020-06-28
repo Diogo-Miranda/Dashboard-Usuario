@@ -1,0 +1,261 @@
+/* Definições Gerais - INICIO */
+
+body{
+    background-color: rgb(223, 223, 223);
+}
+
+.box-cadastrar-lugar h1 {
+    font-size: 40px;
+    margin-left: 40px;
+}
+
+@media screen and (min-width: 1024px)
+{
+    .formulario-lugar 
+    {
+        margin-top: 5%;
+    }
+
+    .box-cadastrar-lugar h1 {
+        margin-left:  400px;
+        margin-top: 20px;
+    }
+}
+
+/* Definições Header - Inicio */
+
+header .logo-site{
+    margin: -100px 0;
+    max-width: 50px;
+}
+
+/* Definições Header - FIM */
+
+/* Informações Usuário/Lugar - Inicio */
+
+#user-lugar-info{
+    margin-top: 20px;
+}
+
+#user-lugar-info .icon{
+    font-size: 40px;
+    flex-wrap: wrap;
+}
+
+#user-lugar-info .list-inline{
+    display: flex;
+}
+
+#user-lugar-info .list-inline h2{
+    font-size: 40px;
+}
+
+@media screen and (max-width: 500px)
+{
+    #user-lugar-info .icon{
+        font-size: 35px;
+    }
+
+    #user-lugar-info .list-inline h2{
+        font-size: 15px;
+    }
+
+    #user-lugar-info {
+        margin-top: 20px;
+    }
+
+}
+
+/* Informações Usuário/Lugar - FIM */
+
+/* Definições Gerais - FIM */
+
+/* Definição de fonte - INICIO*/
+
+@font-face {
+    font-family: Montserrat;
+    src: url('font/Montserrat-Regular.ttf');
+}
+
+/* Deifinição de fonte - FIM
+
+
+/* Componente de informações - INICIO */
+
+#info-principais {
+    margin: 0;
+    padding: 0;
+    border-style: solid;
+    border-radius: 3mm;
+    border-color: rgb(119, 119, 119);
+    background-color: white;
+}
+
+#info-principais .info-componente {
+    margin-top: 10px;
+}
+
+#info-principais .info-componente i{
+    color: rgb(119, 119, 119);
+    font-size: 40px;
+    position: relative;
+}
+
+#info-principais .info-componente .fa-exclamation{
+    margin-top: 5px;
+    font-size: 25px;
+    text-align: center;
+}
+
+#info-principais .info-componente h1{
+    font-family: Montserrat;
+    font-size: 25px;
+    text-align: center;
+}
+
+#info-principais .info-componente h2{
+    font-family: Montserrat;
+    text-align: center;
+}
+
+#info-principais .box-graph-dashboard img{
+    max-width: 100%;
+}
+
+@media screen and (max-width: 500px)
+{
+    #info-principais .info-componente i{
+        font-size: 40px;
+        float: right;
+        margin-left: -10px;
+    }
+
+    #info-principais .info-componente h1{
+        font-family: Montserrat;
+        font-size: 20px;
+    }
+
+    #info-principais {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 0;
+        border-style: solid;
+        border-radius: 3mm;
+        border-color: rgb(119, 119, 119);
+        background-color: white;
+    }
+    
+}
+
+/* Componente de informações - FIM */
+
+/* Componente Notificações - Inicio */
+
+#notificacoes {
+    margin: 100px -5px;
+    border-style: solid;
+    border-radius: 3mm;
+    border-color: rgb(119, 119, 119);
+}
+
+#user-notificacoes .user-notificacoes-componente .user-notificacoes-display {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#user-notificacoes .user-notificacoes-componente .user-notificacoes-display h1, h2{
+    font-family: Montserrat;
+    text-align: justify;
+    padding: 5px;
+    font-size: 25px;
+}
+
+#user-notificacoes .user-notificacoes-componente .user-notificacoes-display i{
+    font-size: 40px;
+}
+
+#user-notificacoes .box-buttonApresentoSintomas{
+    font-size: 40px;
+    margin-left: 125px;
+}
+
+@media screen and (max-width:500px)
+{
+    #notificacoes {
+        margin: 10px 0;
+        background-color: white;
+    }
+    
+    #user-notificacoes .user-notificacoes-componente .user-notificacoes-display {
+        margin-left: 0;
+        margin-top: 0;
+    }    
+
+    #user-notificacoes .user-notificacoes-componente .user-notificacoes-display h1, h2{
+        font-family: Montserrat;
+        padding: 0;
+        font-size: 15px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #user-notificacoes .user-notificacoes-componente .user-notificacoes-display h2{
+        margin-left: -12px;
+    }
+
+
+    #user-notificacoes .user-notificacoes-componente .user-notificacoes-display i{
+        font-size: 20px;
+        float: left;
+        position: relative;
+        margin-left: -20px;
+        margin-top: 10px;
+    }
+
+}
+
+/* Componente Notificações - Fim */
+
+/* Componente Meus Lugares Frequentes - Inicio */
+
+.box-lugaresFrequentes .h2-lugaresFrequentes > h2 {
+    font-size: 20px;
+    font-family: Montserrat;
+} 
+
+@media screen and (min-width: 1024.5px)
+{
+    .box-lugaresFrequentes .h2-lugaresFrequentes h2{
+        font-size: 30px;
+        margin-left: 250px;
+    } 
+
+    .box-lugaresFrequentes{
+        margin-top: 20px;
+        text-align: center;
+    } 
+
+    .box-lugaresFrequentes .button-lugaresFrequentes{
+        margin-left: -350px;
+    } 
+    
+}
+
+#lugaresFrequentes .display-lugaresFrequentes .componente-lugarFrequente{
+    margin-left: -10px;
+}
+
+#lugaresFrequentes .display-lugaresFrequentes .componente-lugarFrequente .card-body{
+    margin-left: -20px;
+}
+
+#lugaresFrequentes .display-lugaresFrequentes .componente-lugarFrequente .card-body .box-buttonCrud{
+    display: flex;
+    justify-content: space-between;
+}
+
+#lugaresFrequentes .display-lugaresFrequentes .componente-lugarFrequente .card-body > h5{
+    text-align: center;
+}
+
+/* Componente Meus Lugares Frequentes - Fim */

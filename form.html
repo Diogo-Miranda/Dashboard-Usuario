@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/css/bootstrapValidator.css" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="style.css">
+    <script src="form.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <title>Cadastrar Lugar</title>
+</head>
+
+<body>
+
+    <header id="my-header">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img src="img/logo/isars3.png" class="logo-site"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Meus Lugares</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container box-cadastrar-lugar">
+        <h1 class="cadastrar-lugar display-4">Cadastrar Lugar</hj1>
+    </div>
+
+    <div class="container formulario-lugar">
+
+        <form id="adicionarLugar">
+            <div class="form-row">
+                <div class="col-md-12 mb-3">
+                    <label for="nomeLugar">Nome Lugar</label>
+                    <input type="text" class="form-control" id="nomeLugar" placeholder="Novo Lugar" value="" required>
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="lugarExistente">Adicionar Existente</label>
+                    </div>
+                    <select class="custom-select" id="lugarExistente">
+                        <option selected>Selecione...</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" class="form-control" id="cidade" placeholder="Cidade"
+                        required>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="estado">Estado</label>
+                    <input type="text" class="form-control" id="estado" placeholder="Estado"
+                        required>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="cep">CEP</label>
+                    <input type="text" class="form-control" id="cep" placeholder="CEP"
+                        required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="custom-control custom-checkbox" style="color: rgb(92, 92, 255)">
+                    <input type="checkbox" class="custom-control-input" id="validacao" required>
+                    <label class="custom-control-label" for="validacao">Aceito os termos e condições</label>
+                    <div class="invalid-feedback">
+                        Você precisa aceitar antes de submeter
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Cadastrar</button>
+        </form>
+    </div>
+   
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

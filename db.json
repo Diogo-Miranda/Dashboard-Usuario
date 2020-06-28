@@ -1,0 +1,188 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Romerio Almeida",
+      "login": "rom785",
+      "senha": "1254",
+      "lugares_frequentes": [
+        {
+          "id_lugar": 1
+        }
+      ],
+      "caso": "confirmado"
+    },
+    {
+      "id": 2,
+      "nome": "Lucia Andrade",
+      "login": "lu22",
+      "senha": "1234",
+      "lugares_frequentes": [
+        {
+          "id_lugar": 1
+        }
+      ],
+      "caso": "sintomas"
+    },
+    {
+      "id": 3,
+      "nome": "Mario Aleimda",
+      "login": "ma22",
+      "senha": "1234",
+      "lugares_frequentes": [
+        {
+          "id_lugar": 1
+        },
+        {
+          "id_lugar": 2
+        },
+        {
+          "id_lugar": 3
+        }
+      ],
+      "caso": "confirmado"
+    },
+    {
+      "id": 4,
+      "nome": "Vitinho Louco",
+      "login": "vitinrd",
+      "senha": "1214",
+      "lugares_frequentes": [
+        {
+          "id_lugar": 1
+        },
+        {
+          "id_lugar": 2
+        }
+      ],
+      "caso": "sintomas"
+    }
+  ],
+  "lugares_frequentes": [
+    {
+      "id": 1,
+      "usuarios_relacionados": [
+        {
+          "id_usuario": 1
+        },
+        {
+          "id_usuario": 2
+        }
+      ],
+      "nome": "Supermercados BH",
+      "estado": "Minas Gerais",
+      "cidade": "Belo Horizonte",
+      "cep": "31578-000",
+      "casos": [
+        {
+          "id_usuario": 1,
+          "tipo": "confirmado"
+        },
+        {
+          "id_usuario": 2,
+          "tipo": "sintomas"
+        },
+        {
+          "id_usuario": 4,
+          "tipo": "confirmado"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "usuarios_relacionados": [
+        {
+          "id_usuario": 1
+        }
+      ],
+      "nome": "Shopping Norte",
+      "estado": "Minas Gerais",
+      "cidade": "Belo Horizonte",
+      "cep": "31578-000",
+      "casos": [
+        {
+          "id_usuario": 1,
+          "tipo": "confirmado"
+        },
+        {
+          "id_usuario": 2,
+          "tipo": "sintomas"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "usuarios_relacionados": [
+        {
+          "id_usuario": 1
+        }
+      ],
+      "nome": "PUC Betim",
+      "estado": "Minas Gerais",
+      "cidade": "Betim",
+      "cep": "35454-000",
+      "casos": [
+        {
+          "id_usuario": 1,
+          "tipo": "confirmado"
+        },
+        {
+          "id_usuario": 2,
+          "tipo": "sintomas"
+        },
+        {
+          "id_usuario": 3,
+          "tipo": "confirmado"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "usuarios_relacionados": [
+        {
+          "id_usuario": 1
+        }
+      ],
+      "nome": "UFMG",
+      "estado": "Minas Gerais",
+      "cidade": "Belo Horizonte",
+      "cep": "35454-150",
+      "casos": [
+        {
+          "id_usuario": 1,
+          "tipo": "confirmado"
+        },
+        {
+          "id_usuario": 2,
+          "tipo": "sintomas"
+        },
+        {
+          "id_usuario": 4,
+          "tipo": "sintomas"
+        }
+      ]
+    },
+    [
+      {
+        "id": 1,
+        "usuarios_relacionados": 3,
+        "nome": "Supermercados BH",
+        "estado": "Minas Gerais",
+        "cidade": "Belo Horizonte",
+        "cep": "31578-000",
+        "casos": 4
+      }
+    ],
+    [
+      {
+        "id": 1,
+        "usuarios_relacionados": 3,
+        "nome": "Supermercados BH",
+        "estado": "Minas Gerais",
+        "cidade": "Belo Horizonte",
+        "cep": "31578-000",
+        "casos": 4
+      }
+    ]
+  ]
+}
